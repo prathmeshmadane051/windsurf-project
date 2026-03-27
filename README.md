@@ -2,6 +2,8 @@
 
 A comprehensive job portal application built with the MERN stack (MongoDB, Express.js, React, Node.js) that connects recruiters with talented candidates.
 
+https://github.com/SanjayV2811/windsurf-project
+
 ## Features
 
 ### For Recruiters
