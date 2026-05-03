@@ -23,15 +23,17 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Job Portal API is running' });
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/jobs', require('./routes/jobs'));
 app.use('/api/applications', require('./routes/applications'));
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Job Portal API is running' });
-});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
